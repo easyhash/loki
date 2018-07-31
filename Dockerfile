@@ -21,7 +21,7 @@ RUN set -x \
 		libtool-bin \
 		autoconf \
 		automake \
-		unzip' \
+		unzip'\
 	&& apt-get -qq update \
 	&& apt-get -qq install $buildDeps
 
