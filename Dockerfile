@@ -30,8 +30,9 @@ RUN mkdir -p /daemon && mkdir -p /daemon/data && mkdir -p /daemon
 
 # Install Daemon
 WORKDIR /daemon/
-RUN wget https://github.com/loki-project/loki/releases/download/v1.0.0-rc.3/loki-linux-x64-1.0.0-rc.3.zip
-RUN unzip loki-linux-x64-1.0.0-rc.3.zip && chmod +x loki-linux-x64-*/loki* && mv -f loki-linux-x64-*/* . 
+RUN wget https://github.com/loki-project/loki/releases/download/1.0.2/loki-linux-x64-1.0.2.zip
+
+RUN unzip loki-linux-x64-1.0.2.zip && chmod +x loki-linux-x64-*/loki* && mv -f loki-linux-x64-*/* . 
 
 EXPOSE 18081 18082
 
